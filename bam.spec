@@ -1,12 +1,12 @@
 Summary:	Build system
 Name:		bam
 Version:	0.2.0
-Release:	0.1
+Release:	1
 License:	zlib
 Group:		Development/Building
 Source0:	http://www.teeworlds.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	d4efe74591a73c1cec8b34d76ffd1049
-URL:		http://teeworlds.com/trac/bam/browser/releases/
+URL:		http://teeworlds.com/trac/bam/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
