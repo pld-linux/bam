@@ -1,12 +1,12 @@
 Summary:	Build system
 Name:		bam
-Version:	0.2.0
+Version:	0.4.0
 Release:	1
 License:	zlib
 Group:		Development/Building
-Source0:	http://www.teeworlds.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	d4efe74591a73c1cec8b34d76ffd1049
-URL:		http://teeworlds.com/trac/bam/
+Source0:	http://github.com/downloads/matricks/bam/%{name}-%{version}.tar.bz2
+# Source0-md5:	f8b62ad553c3615a725a034df4fb4257
+URL:		http://matricks.github.com/bam/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -20,12 +20,12 @@ platforms including but not limited to Linux, Mac OS X and Windows.
 %setup -q
 
 %build
-./make_unix.sh
+./make_unix.sh %{rpmcflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D src/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
+install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
