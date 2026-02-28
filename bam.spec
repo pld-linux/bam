@@ -1,7 +1,7 @@
 Summary:	Build system
 Name:		bam
 Version:	0.4.0
-Release:	1
+Release:	2
 License:	zlib
 Group:		Development/Building
 Source0:	http://github.com/downloads/matricks/bam/%{name}-%{version}.tar.bz2
